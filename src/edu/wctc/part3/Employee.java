@@ -62,8 +62,8 @@ public class Employee {
     /*
         This should be private because it is useful only to this class and then,
         only as a helper method to other methods. This is method hiding - a type
-        of encapsulation where we put frequently used code in one place for
-        easy editing later if necessary.
+        of encapsulation where we put frequently used code in one place for easy
+        reuse and editing.
      */
     private String getFormattedDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yy");

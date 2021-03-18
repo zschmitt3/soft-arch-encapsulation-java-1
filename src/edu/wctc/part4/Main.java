@@ -6,6 +6,8 @@ package edu.wctc.part4;
  * Employees don't just hire themselves and them tell themselves to go through
  * orientation. There's usually a company and a HR person involved.
  *
+ * Refer to the Employee class for further directions.
+ *
  * @author Jim Lombardo, WCTC Instructor
  * @version 1.02
  */

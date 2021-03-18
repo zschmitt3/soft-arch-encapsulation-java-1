@@ -52,7 +52,7 @@ public class Employee {
     private boolean movedIn;
     private String cubeId;
     private LocalDate orientationDate;
-    private EmployeeReportService reportService;
+    private EmployeeReportService reportService = new EmployeeReportService();
 
     /*
         Notice we force certain mandatory properties by using a custom
@@ -64,7 +64,6 @@ public class Employee {
         setFirstName(firstName);
         setLastName(lastName);
         setSsn(ssn);
-        reportService = new EmployeeReportService();
     }
 
     /*
