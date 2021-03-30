@@ -7,9 +7,6 @@ import java.time.LocalDate;
  * consider if any of the properties should be mandatory and use a constructor
  * to enforce that. Review the tips in the document Encapsulation Checklist if
  * needed.
- *
- * @author Jim Lombardo
- * @version 1.02
  */
 public class Employee {
 

@@ -21,9 +21,6 @@ import java.time.format.DateTimeFormatter;
  * 4. All method parameters should be validated (except booleans).
  *
  * Review the tips in the document Encapsulation Checklist if needed.
- *
- * @author Jim Lombardo
- * @version 1.02
  */
 public class Employee {
     private String firstName;

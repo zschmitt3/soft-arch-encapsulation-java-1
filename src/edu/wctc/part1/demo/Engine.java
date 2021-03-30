@@ -17,11 +17,8 @@ package edu.wctc.part1.demo;
  * public setter methods. This class looks immutable, but it's not because the
  * start() method mutates the state of the running property.
  *
- * Also notice that this Class has a Single Responsibility: to do what an
+ * Also notice that this class has a Single Responsibility: to do what an
  * Engine can do and nothing more.
- *
- *
- * @author Jim Lombardo
  */
 public class Engine {
 

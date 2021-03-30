@@ -7,9 +7,6 @@ package edu.wctc.part4;
  * orientation. There's usually a company and a HR person involved.
  *
  * Refer to the Employee class for further directions.
- *
- * @author Jim Lombardo, WCTC Instructor
- * @version 1.02
  */
 public class Main {
 

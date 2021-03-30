@@ -35,9 +35,6 @@ import java.time.format.DateTimeFormatter;
  * in other setter methods.
  *
  * Review the tips in the Encapsulation Checklist document if needed.
- *
- * @author Jim Lombardo
- * @version 1.02
  */
 public class Employee {
 
@@ -101,7 +98,7 @@ public class Employee {
     // Assume this must be performed second, and assume that an employee
     // would only do this once, upon being hired. If that were true, this
     // method should not be public. It should only be available to this class
-    // and should only be called as part of the larger task of:
+    // and should only be called as part of the larger task of
     // doFirstTimeOrientation()
     private void meetDepartmentStaff() {
         metDeptStaff = true;
@@ -138,7 +135,7 @@ public class Employee {
     // practice when validation fails. Don't do a System.out.println()
     // to display an error message -- not the job of this class!
     public void setFirstName(String firstName) {
-        if (firstName == null || firstName.isEmpty()) {
+        if (firstName == null || firstName.isBlank()) {
             throw new IllegalArgumentException("first name is required");
         }
         this.firstName = firstName;
@@ -149,7 +146,7 @@ public class Employee {
     }
 
     public void setLastName(String lastName) {
-        if (lastName == null || lastName.isEmpty()) {
+        if (lastName == null || lastName.isBlank()) {
             System.out.println("last name is required");
         }
         this.lastName = lastName;
@@ -160,7 +157,7 @@ public class Employee {
     }
 
     public void setSsn(String ssn) {
-        if (ssn == null || ssn.length() < 9 || ssn.length() > 11) {
+        if (ssn == null || ssn.length() < 9 || ssn.length() > 11) { // Magic numbers!
             System.out.println("ssn is required and must be "
                     + "between 9 and 11 characters (if hyphens are used)");
         }
@@ -205,7 +202,7 @@ public class Employee {
     }
 
     public void setCubeId(String cubeId) {
-        if (cubeId == null || cubeId.isEmpty()) {
+        if (cubeId == null || cubeId.isBlank()) {
             System.out.println("cube id is required");
         }
         this.cubeId = cubeId;

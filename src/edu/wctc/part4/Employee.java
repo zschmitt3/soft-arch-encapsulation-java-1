@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 
 /**
- * As with the previous lab you should focus on CLASS Encapsulation and the
+ * As with part3 you should focus on CLASS Encapsulation and the
  * Single Responsibility Principle (SRP). However what makes this lab DIFFERENT
  * is that in a real program you would need more than just an Employee class and
  * a EmployeeReportService class. Remember what you learned about OOAD and
@@ -31,9 +31,6 @@ import java.time.format.DateTimeFormatter;
  * each class.
  *
  * Review the tips in the document Encapsulation Checklist if needed.
- *
- * @author Jim Lombardo
- * @version 1.02
  */
 public class Employee {
 
@@ -144,7 +141,7 @@ public class Employee {
     // practice when validation fails. Don't do a System.out.println()
     // to display an error message -- not the job of this class!
     public void setFirstName(String firstName) {
-        if (firstName == null || firstName.isEmpty()) {
+        if (firstName == null || firstName.isBlank()) {
             throw new IllegalArgumentException("first name" + REQUIRED_MSG);
         }
         this.firstName = firstName;
@@ -155,7 +152,7 @@ public class Employee {
     }
 
     public void setLastName(String lastName) {
-        if (lastName == null || lastName.isEmpty()) {
+        if (lastName == null || lastName.isBlank()) {
             throw new IllegalArgumentException("last name" + REQUIRED_MSG);
         }
         this.lastName = lastName;
@@ -211,7 +208,7 @@ public class Employee {
     }
 
     public void setCubeId(String cubeId) {
-        if (cubeId == null || cubeId.isEmpty()) {
+        if (cubeId == null || cubeId.isBlank()) {
             throw new IllegalArgumentException("cube id" + REQUIRED_MSG);
         }
         this.cubeId = cubeId;

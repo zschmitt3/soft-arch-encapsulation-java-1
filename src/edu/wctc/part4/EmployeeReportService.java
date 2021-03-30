@@ -6,9 +6,6 @@ package edu.wctc.part4;
  * code in the outputReport method to use a JOptionPane for GUI output instead
  * of using the current console output. And notice that making this change would
  * not cause problems with any other classes. Very flexible!
- *
- * @author Jim Lombardo, WCTC Instructor
- * @version 1.02
  */
 public class EmployeeReportService {
 

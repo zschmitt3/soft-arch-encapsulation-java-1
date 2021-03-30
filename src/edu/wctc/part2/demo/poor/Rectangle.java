@@ -5,7 +5,7 @@ public class Rectangle {
 
     /*
     There are so many things wrongs with this method.
-    First of all, it's violating command/query separation.
+    It's violating command/query separation.
     It's both a setter (command) and a getter (query)!
      */
     public double getArea(double length, double width) {
