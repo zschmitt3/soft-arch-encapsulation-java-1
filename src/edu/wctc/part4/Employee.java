@@ -10,26 +10,26 @@ import java.time.format.DateTimeFormatter;
  * is that in a real program you would need more than just an Employee class and
  * a EmployeeReportService class. Remember what you learned about OOAD and
  * finding the Conceptual Objects in the Problem Domain.
- *
+ * <p>
  * Pay special attention to the following issues:
- *
+ * <p>
  * 1. You will need additional classes to simulate the real world. To keep things
  * simple you should think about adding two more classes. Think about how employees
  * are hired, who does the hiring and who do those people work for. Think about the
  * Nouns used in business with respect to hiring employees and commanding them to go
  * through orientation.
- *
+ * <p>
  * 2. When adding these classes think about the Single Responsibility Principle
  * and Class Encapsulation -- hiding classes inside other classes, similar to
  * what you did with the report service which was hidden inside the Employee
  * class.
- *
+ * <p>
  * 3. For those who struggle with this final lab a solution is provided.
  * However, you should not look at the solution unless absolutely necessary if
  * you are stuck. Try to do as much of this lab on your own by doing critical
  * thinking about the classes you need and the responsibilities you are giving
  * each class.
- *
+ * <p>
  * Review the tips in the document Encapsulation Checklist if needed.
  */
 public class Employee {
@@ -174,33 +174,16 @@ public class Employee {
         return metWithHr;
     }
 
-    // boolean parameters need no validation
-    public void setMetWithHr(boolean metWithHr) {
-        this.metWithHr = metWithHr;
-    }
-
     public boolean hasMetDeptStaff() {
         return metDeptStaff;
-    }
-
-    public void setMetDeptStaff(boolean metDeptStaff) {
-        this.metDeptStaff = metDeptStaff;
     }
 
     public boolean hasReviewedDeptPolicies() {
         return reviewedDeptPolicies;
     }
 
-    public void setReviewedDeptPolicies(boolean reviewedDeptPolicies) {
-        this.reviewedDeptPolicies = reviewedDeptPolicies;
-    }
-
     public boolean hasMovedIn() {
         return movedIn;
-    }
-
-    public void setMovedIn(boolean movedIn) {
-        this.movedIn = movedIn;
     }
 
     public String getCubeId() {
@@ -216,13 +199,6 @@ public class Employee {
 
     public LocalDate getOrientationDate() {
         return orientationDate;
-    }
-
-    public void setOrientationDate(LocalDate orientationDate) {
-        if (orientationDate == null) {
-            throw new IllegalArgumentException("orientationDate" + REQUIRED_MSG);
-        }
-        this.orientationDate = orientationDate;
     }
 
     public void printReport() {

@@ -43,8 +43,6 @@ import java.time.format.DateTimeFormatter;
  * These tasks are all delegated to the hidden objects inside. Company delegates
  * to HrManager, HrManager delegates to Employee -- just like the real world!
  *
- * @author Jim Lombardo
- * @version 1.02
  */
 public class Employee {
 
@@ -184,33 +182,16 @@ public class Employee {
         return metWithHr;
     }
 
-    // boolean parameters need no validation
-    public void setMetWithHr(boolean metWithHr) {
-        this.metWithHr = metWithHr;
-    }
-
     public boolean hasMetDeptStaff() {
         return metDeptStaff;
-    }
-
-    public void setMetDeptStaff(boolean metDeptStaff) {
-        this.metDeptStaff = metDeptStaff;
     }
 
     public boolean hasReviewedDeptPolicies() {
         return reviewedDeptPolicies;
     }
 
-    public void setReviewedDeptPolicies(boolean reviewedDeptPolicies) {
-        this.reviewedDeptPolicies = reviewedDeptPolicies;
-    }
-
     public boolean hasMovedIn() {
         return movedIn;
-    }
-
-    public void setMovedIn(boolean movedIn) {
-        this.movedIn = movedIn;
     }
 
     public String getCubeId() {

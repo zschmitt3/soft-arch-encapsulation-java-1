@@ -113,33 +113,16 @@ public class Employee {
         return metWithHr;
     }
 
-    // boolean parameters need no validation
-    public void setMetWithHr(boolean metWithHr) {
-        this.metWithHr = metWithHr;
-    }
-
     public boolean hasMetDeptStaff() {
         return metDeptStaff;
-    }
-
-    public void setMetDeptStaff(boolean metDeptStaff) {
-        this.metDeptStaff = metDeptStaff;
     }
 
     public boolean hasReviewedDeptPolicies() {
         return reviewedDeptPolicies;
     }
 
-    public void setReviewedDeptPolicies(boolean reviewedDeptPolicies) {
-        this.reviewedDeptPolicies = reviewedDeptPolicies;
-    }
-
     public boolean hasMovedIn() {
         return movedIn;
-    }
-
-    public void setMovedIn(boolean movedIn) {
-        this.movedIn = movedIn;
     }
 
     public String getCubeId() {
