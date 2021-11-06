@@ -17,10 +17,7 @@ package edu.wctc.part4.solution;
  * those other classes and changes can easily be made in those other classes
  * without affecting this class. That means greater flexibility and less rigidity
  * and fragility.
- *
- * @author Jim Lombardo
- * @version 1.02
- */
+  */
 public class Main {
 
     public static void main(String[] args) {
