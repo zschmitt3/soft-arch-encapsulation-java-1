@@ -1,7 +1,5 @@
 package edu.wctc.part4.solution;
 
-import javax.swing.JOptionPane;
-
 /**
  * This class simulates a simple type of reporting service that produces output.
  * That's it's Single Responsibility. Notice how easy it would be to change the
@@ -21,7 +19,7 @@ public class EmployeeReportService {
     }
 
     public void outputReport() {
-        JOptionPane.showMessageDialog(null, report);
+        System.out.println(report);
     }
 
     public void clearReport() {

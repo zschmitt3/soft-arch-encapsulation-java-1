@@ -112,7 +112,7 @@ public class Employee {
                 + getFormattedDate() + NEWLINE);
     }
 
-    // Assume this must be performed first, and assume that an employee
+    // Assume this must be performed second, and assume that an employee
     // would only do this once, upon being hired. If that were true, this
     // method should not be public. It should only be available to this class
     // and should only be called as part of the larger task of:
