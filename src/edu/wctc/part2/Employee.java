@@ -39,9 +39,16 @@ public class Employee {
         this.ssn = ssn;
     }
 
+    public void callBulkFunctions(String cubeId){
+        //Had no idea what to call it.
+        meetWithHrForBenefitAndSalaryInfo();
+        meetDepartmentStaff();
+        reviewDeptPolicies();
+        moveIntoCubicle(cubeId);
+    }
     // Assume this must be performed first, and assume that an employee
     // would only do this once, upon being hired.
-    public void meetWithHrForBenefitAndSalaryInfo() {
+    private void meetWithHrForBenefitAndSalaryInfo() {
         metWithHr = true;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yy");
         String fmtDate = formatter.format(orientationDate);
@@ -51,7 +58,7 @@ public class Employee {
 
     // Assume this must be performed second, and assume that an employee
     // would only do this once, upon being hired.
-    public void meetDepartmentStaff() {
+    private void meetDepartmentStaff() {
         metDeptStaff = true;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yy");
         String fmtDate = formatter.format(orientationDate);

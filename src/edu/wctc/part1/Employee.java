@@ -19,4 +19,10 @@ public class Employee {
     public boolean movedIn;
     public String cubeId;
     public LocalDate orientationDate;
+
+    public Employee(String firstName, String lastName, String ssn){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.ssn=ssn;
+    }
 }
