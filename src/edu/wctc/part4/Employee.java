@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * As with part3 you should focus on CLASS Encapsulation and the
- * Single Responsibility Principle (SRP). However what makes this lab DIFFERENT
+ * Single Responsibility Principle (SRP). However, what makes this lab DIFFERENT
  * is that in a real program you would need more than just an Employee class and
  * a EmployeeReportService class. Remember what you learned about OOAD and
  * finding the Conceptual Objects in the Problem Domain.
